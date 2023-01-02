@@ -4,5 +4,12 @@
 <p> <%= home_p %> </p>
 
 
+  <% for (let i = 0; i<posts.length;i++){ %>
+    <h1> <%= posts[i].title %> </h1>
+    <p> <%= posts[i].post %> </p>
+  <% } %>
 
+
+
+  
 <%- include('footer.ejs') %>
